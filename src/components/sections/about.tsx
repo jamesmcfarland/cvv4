@@ -22,7 +22,7 @@ import { useState } from "react";
 const AboutSection = () => {
   const [source, setsource] = useState(false);
   return (
-    <Element name="main">
+    <Element name="readme">
       <div id="main" className="min-h-screen w-full p-8 justify-center flex">
         <div className="w-[80%]">
           <Card>
