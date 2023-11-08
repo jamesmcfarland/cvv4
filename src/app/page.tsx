@@ -1,24 +1,8 @@
 import AboutSection from "@/components/sections/about";
 import SeeMoreButton from "@/components/seeMoreButton";
 import { LightDarkModeToggle } from "@/components/theme-picker";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
-
-import { Button } from "@/components/ui/button";
 import { GeistMono } from "geist/font";
-import { ChevronDownIcon } from "lucide-react";
-import Image from "next/image";
-import { Link, Element } from "react-scroll";
 import Nav from "@/components/nav";
-import StickyHeader from "@/components/stickyNav";
 import ProjectsSection from "@/components/sections/projects";
 
 export default function Home() {
