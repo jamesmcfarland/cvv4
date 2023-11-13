@@ -23,16 +23,16 @@ const AboutSection = () => {
   const [source, setsource] = useState(false);
   return (
     <Element name="readme">
-      <div id="main" className="min-h-screen w-full p-8 justify-center flex">
-        <div className="w-[80%]">
+      <div id="main" className="min-h-screen w-full sm:p-8 justify-center flex">
+        <div className="w-[95%] sm:w-[80%]">
           <Card>
             <CardHeader>
-              <div className="flex justify-between items-center border-b-2 pb-2">
+              <div className="flex justify-between items-center border-b-2 pb-2 flex-wrap gap-y-2">
                 <div className="flex gap-2 items-center justify-center">
                   <EditIcon className="h-4 w-4" />
-                  <h1 className="text-xl font-mono">README.md</h1>
+                  <h1 className="sm:text-xl font-mono">README.md</h1>
                 </div>
-                <div className="flex gap-2 items-center justify-center">
+                <div className="flex sm:gap-2 items-center justify-center">
                   {[
                     ItalicIcon,
                     BoldIcon,
@@ -40,20 +40,22 @@ const AboutSection = () => {
                     StrikethroughIcon,
                     LinkIcon,
                   ].map((Icon, i) => (
-                    <Button variant="ghost" key={i}>
-                      <Icon className="h-4 w-4" />
+                    <Button variant="ghost" key={i} className="p-2 sm:px-4">
+                      <Icon className="h-3 w-23 sm:h-4 sm:w-4" />
                     </Button>
                   ))}
                 </div>
-                <div className="flex gap-x-8">
+                <div className="flex gap-x-8 ">
                   <div className="flex items-center gap-x-2">
                     <Switch
                       id="editMode"
                       onCheckedChange={(c) => setsource(c)}
                     />
-                    <label htmlFor="editMode">View source</label>
+                    <label htmlFor="editMode" className="text-sm">
+                      View source
+                    </label>
                   </div>
-                  <Button variant="outline" className="font-sans">
+                  <Button variant="outline" size="sm" className="font-sans">
                     <SaveIcon className="h-4 w-4 mr-2" />
                     Save changes
                   </Button>
