@@ -22,7 +22,7 @@ export default function Home() {
             <h1>events team @ queens&apos; computing society</h1>
             <h1>f1 fan</h1>
           </div>
-          <h1 className="text-6xl font-bold lowercase border-t-2 border-b-2 border-dashed">
+          <h1 className="text-4xl sm:text-6xl font-bold lowercase border-t-2 border-b-2 border-dashed">
             jamesmcfarland
           </h1>
         </div>
@@ -33,7 +33,7 @@ export default function Home() {
       <Nav />
 
       <AboutSection />
-      <Separator className="m-4" />
+      <Separator className="p-4" />
       <ProjectsSection />
     </main>
   );
