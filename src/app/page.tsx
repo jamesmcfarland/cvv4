@@ -4,6 +4,7 @@ import { LightDarkModeToggle } from "@/components/theme-picker";
 import { GeistMono } from "geist/font";
 import Nav from "@/components/nav";
 import ProjectsSection from "@/components/sections/projects";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <Nav />
 
       <AboutSection />
+      <Separator className="m-4" />
       <ProjectsSection />
     </main>
   );
