@@ -29,7 +29,7 @@ const Project = ({ name, url, image, description }: Project) => {
     //   </CardFooter>
     // </Card>
     <div className="min-w-sm max-w-lg min-h-[250px] flex flex-col rounded-lg border bg-card shadow-sm">
-      <div className="w-full h-full rounded-t-lg relative bg-red-400 min-h-[100px]">
+      <div className="w-full h-full rounded-t-lg relative min-h-[100px]">
         <Image
           src={image}
           alt={name + " screenshot"}
