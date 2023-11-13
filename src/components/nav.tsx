@@ -18,7 +18,7 @@ const links = [
 
 const Nav = () => {
   return (
-    <div className="border rounded-xl sticky top-0 m-4">
+    <div className="border rounded-xl md:sticky top-0 sm:m-4">
       <Card>
         <CardHeader>
           <div className="flex gap-6 items-center">
@@ -27,7 +27,7 @@ const Nav = () => {
                 <AvatarImage src="/james.jpg" />
                 <AvatarFallback>JM</AvatarFallback>
               </Avatar>
-              <h1 className="font-bold">jamesmcfarland</h1>
+              <h1 className="font-bold hidden sm:visible">jamesmcfarland</h1>
             </div>
             {links.map((link, i) => (
               <Link
