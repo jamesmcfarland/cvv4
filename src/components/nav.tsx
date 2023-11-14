@@ -18,7 +18,7 @@ const links = [
 
 const Nav = () => {
   return (
-    <div className=" md:sticky top-0 sm:m-4 mb-4">
+    <div className=" md:sticky top-0 sm:m-4 mb-4 z-50">
       <Card>
         <CardHeader>
           <div className="flex gap-6 items-center">

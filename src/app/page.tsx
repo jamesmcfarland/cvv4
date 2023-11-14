@@ -33,7 +33,7 @@ export default function Home() {
       <Nav />
 
       <AboutSection />
-      <Separator className="p-4" />
+      <Separator className="my-4" />
       <ProjectsSection />
     </main>
   );

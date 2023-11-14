@@ -18,6 +18,7 @@ const ProjectsSection = () => {
               url={project.url}
               image={project.image}
               description={project.description}
+              technicalDescription={project.technicalDescription}
             />
           ))}
         </div>
