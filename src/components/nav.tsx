@@ -14,20 +14,24 @@ const links = [
     name: "Projects",
     link: "projects",
   },
+  {
+    name: "Contact",
+    link: "contact",
+  },
 ];
 
 const Nav = () => {
   return (
-    <div className=" md:sticky top-0 sm:m-4 mb-4 z-50">
+    <div className="sticky top-0 sm:m-4 mb-4 z-50">
       <Card>
         <CardHeader>
-          <div className="flex gap-6 items-center">
-            <div className="flex items-center gap-4">
+          <div className="flex gap-2 md:gap-6 items-center">
+            <div className="flex items-center gap-3">
               <Avatar>
                 <AvatarImage src="/james.jpg" />
                 <AvatarFallback>JM</AvatarFallback>
               </Avatar>
-              <h1 className="font-bold hidden sm:visible">jamesmcfarland</h1>
+              <h1 className="font-bold hidden sm:block">jamesmcfarland</h1>
             </div>
             {links.map((link, i) => (
               <Link

@@ -5,11 +5,12 @@ import { GeistMono } from "geist/font";
 import Nav from "@/components/nav";
 import ProjectsSection from "@/components/sections/projects";
 import { Separator } from "@/components/ui/separator";
+import ContactSection from "@/components/sections/contact";
 
 export default function Home() {
   return (
     <main>
-      <div className="h-screen w-full flex flex-col justify-between p-8 border-b-2 border-dashed">
+      <div className="h-screen w-full flex flex-col justify-between p-8">
         <div className="self-end">
           <LightDarkModeToggle />
         </div>
@@ -22,7 +23,7 @@ export default function Home() {
             <h1>events team @ queens&apos; computing society</h1>
             <h1>f1 fan</h1>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-bold lowercase border-t-2 border-b-2 border-dashed">
+          <h1 className="text-4xl sm:text-6xl font-bold lowercase">
             jamesmcfarland
           </h1>
         </div>
@@ -35,6 +36,8 @@ export default function Home() {
       <AboutSection />
       <Separator className="my-4" />
       <ProjectsSection />
+      <Separator className="my-4" />
+      <ContactSection />
     </main>
   );
 }
