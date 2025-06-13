@@ -29,7 +29,7 @@ const ContactSection = () => {
         </div>
       </div>
       <h1 className="opacity-80 w-full text-center py-4">
-        © james mcfarland 2025.
+        © james mcfarland 2025
       </h1>
     </Element>
   );
