@@ -1,4 +1,5 @@
-export const aboutMarkdown = `# James McFarland
+# James McFarland
+
 |                             &nbsp;                             |                              &nbsp;                              |                                     &nbsp;                                      |
 | :------------------------------------------------------------: | :--------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
 | ![studied at](https://img.shields.io/badge/studied_at-qub-red) | ![university](https://img.shields.io/badge/grade-1st_class-blue) | ![interning at](https://img.shields.io/badge/former_intern_@-liberty_IT-yellow) |
@@ -66,5 +67,3 @@ The ~~fun~~ professional bit
 That's enough for the README. Let's see some code.
 
 James.
-
-`;
