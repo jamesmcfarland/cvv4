@@ -18,9 +18,10 @@ export default function Home() {
           <div
             className={`${GeistMono.className} uppercase tracking-widest opacity-90 mb-4`}
           >
-            <h1>software engineering @ qub</h1>
-            <h1>intern @ libertyit</h1>
-            <h1>events team @ queens&apos; computing society</h1>
+            <h1>1st class software engineering @ qub</h1>
+            <h1>former intern @ libertyit</h1>
+            <h1>vice president @ queens&apos; computing society</h1>
+            <h1>secure by design</h1>
             <h1>f1 fan</h1>
           </div>
           <h1 className="text-4xl sm:text-6xl font-bold lowercase">
