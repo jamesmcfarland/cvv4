@@ -23,7 +23,7 @@ const links = [
 const Nav = () => {
   return (
     <div className="sticky top-0 sm:m-4 mb-4 z-50">
-      <Card>
+      <Card className="bg-white/30 dark:bg-black/30 backdrop-blur-lg shadow-lg border border-white/20 dark:border-black/20">
         <CardHeader>
           <div className="flex gap-2 md:gap-6 items-center">
             <div className="flex items-center gap-3">
@@ -31,7 +31,9 @@ const Nav = () => {
                 <AvatarImage src="/james.jpg" />
                 <AvatarFallback>JM</AvatarFallback>
               </Avatar>
-              <h1 className="font-bold hidden sm:block">jamesmcfarland</h1>
+              <h1 className="font-bold hidden sm:block text-black dark:text-white">
+                jamesmcfarland
+              </h1>
             </div>
             {links.map((link, i) => (
               <Link
@@ -41,7 +43,9 @@ const Nav = () => {
                 smooth={true}
                 offset={-100}
               >
-                <Button variant="ghost">{link.name}</Button>
+                <Button variant="ghost" className="text-black dark:text-white">
+                  {link.name}
+                </Button>
               </Link>
             ))}
           </div>
