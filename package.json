@@ -21,6 +21,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "geist": "^1.4.2",
+    "gsap": "^3.13.0",
     "lucide-react": "^0.292.0",
     "markdown-to-jsx": "^7.7.12",
     "next": "14.0.1",
