@@ -1,4 +1,4 @@
-import { Project } from "@/content/projects";
+import { ProjectElement } from "@/content/projects";
 
 import { Button } from "./ui/button";
 import Link from "next/link";
@@ -10,7 +10,7 @@ const Project = ({
   image,
   description,
   technicalDescription,
-}: Project) => {
+}: ProjectElement) => {
   return (
     <div className="min-w-sm max-w-lg min-h-[250px] flex flex-col rounded-lg border bg-card shadow-sm">
       <div className="w-full h-full rounded-t-lg relative min-h-[200px]">

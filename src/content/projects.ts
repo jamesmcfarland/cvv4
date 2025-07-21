@@ -5,7 +5,7 @@ import mcivorImg from "@/content/images/mcivor.png";
 import qcsDiscordImg from "@/content/images/qcsdiscord.png";
 import f1lapImg from "@/content/images/f1lap.png";
 
-export const projects: Project[] = [
+export const projects: ProjectElement[] = [
   {
     name: "socmanager",
     url: "https://socmanager.jamesmcfarland.dev",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
   },
 ];
 
-export type Project = {
+export type ProjectElement = {
   name: string;
   url: string;
   image: string | StaticImageData;
