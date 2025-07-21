@@ -28,7 +28,9 @@ const ContactSection = () => {
           ))}
         </div>
       </div>
-      <h1 className="opacity-80 w-full text-center py-4">
+      <h1
+        className={` uppercase opacity-80 w-full text-center py-4 font-mono tracking-wide`}
+      >
         © james mcfarland 2025
       </h1>
     </Element>
