@@ -2,7 +2,8 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
-import { Link } from "react-scroll";
+import Link from "next/link";
+import { Link as ReactScrollLink } from "react-scroll";
 import { Card, CardHeader } from "./ui/card";
 
 const links = [
@@ -31,12 +32,23 @@ const Nav = () => {
                 <AvatarImage src="/james.jpg" />
                 <AvatarFallback>JM</AvatarFallback>
               </Avatar>
-              <h1 className="font-bold hidden sm:block text-black dark:text-white">
-                jamesmcfarland
-              </h1>
+              <div className="hidden sm:flex items-center gap-2 pl-2">
+                <h1 className="font-bold text-black dark:text-white">
+                  jamesmcfarland
+                </h1>
+                <Button asChild variant="ghost" size="sm" className="pl-5">
+                  <Link
+                    href="https://blog.jamesmcfarland.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Blog
+                  </Link>
+                </Button>
+              </div>
             </div>
             {links.map((link, i) => (
-              <Link
+              <ReactScrollLink
                 key={i}
                 to={link.link}
                 duration={1000}
@@ -46,7 +58,7 @@ const Nav = () => {
                 <Button variant="ghost" className="text-black dark:text-white">
                   {link.name}
                 </Button>
-              </Link>
+              </ReactScrollLink>
             ))}
           </div>
         </CardHeader>
